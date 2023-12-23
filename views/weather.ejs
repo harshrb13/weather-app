@@ -1,0 +1,49 @@
+<%- include('./partials/head.ejs')%>
+
+<body>
+  <!-- navbar-content  -->
+  <%- include('./partials/navbar.ejs')%>
+
+    <!-- main-content-  -->
+    
+    <div class="container-fluid">
+      <div class="row justify-content-center d-flex">
+        <div class=" col-md-10 col-lg-8">
+          <div class="row d-flex flex-column">
+            <div class="col">
+              <form class="my-5 container  my-w">
+                <input type="text" placeholder="Enter city you want to search" class="py-2 ps-4 rounded-pill w-100 forSearchBar" id="serachBar">
+                <input type="submit" value="SEARCH" class="forSearchBtn rounded-pill px-4 py-1 " id="searchBtn">
+              </form>
+            </div>
+            <div class="col">
+              <div class="container  border border-2 weather-con rounded" >
+                <div class="row">
+                  <h6 class="col-12 lead h6-sm Date-size" id="timeZone">
+                    
+                  </h6>
+                </div>
+                <div class="row">
+                  <h5 class="col-12 h6-sm cityName-size" id="cityName">
+                    GET Weather
+                  </h5>
+                </div>
+                <div class="row">
+                  <h1 class="col-6 h6-sm temp-size pt-4" id="tempreture">
+                    
+                  </h1>
+                  <div class="col-6 d-flex justify-content-center py-3 " id="tempStatus" >
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/script.js"></script>
+    <!-- footer content  -->
+
+  <%- include('./partials/footer.ejs')%>
+
