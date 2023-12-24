@@ -3,8 +3,8 @@ const app = express()
 const path = require('path')
 const port = process.env.PORT || 3000;
 
-const views_dir = path.join(__dirname,'../views') 
-const publicpath = path.join(__dirname,'../public')
+const views_dir = path.join(__dirname,'./views') 
+const publicpath = path.join(__dirname,'./public')
 app.use(express.static(publicpath))
 
 app.set('view engine','ejs')
