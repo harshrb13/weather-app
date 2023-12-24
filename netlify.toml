@@ -1,0 +1,6 @@
+[build]
+  command = "node index.js" 
+  functions = "functions" 
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"  
